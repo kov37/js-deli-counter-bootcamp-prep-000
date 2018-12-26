@@ -12,7 +12,7 @@ function currentLine(line){
     return "The line is currently empty."
   var currentLine = "The line is currently:"
   for (var i = 0; i < line.length; i++){
-    currentLine += ` ${i+1}. ${line[i]}${i === line.length - 2 ? ',' : ''}`
+    currentLine += ` ${i+1}. ${line[i]}${i !== line.length - 1 ? ',' : ''}`
   }
   return currentLine;
 }
